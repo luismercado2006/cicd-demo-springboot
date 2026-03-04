@@ -8,7 +8,7 @@ public class CalculatorController {
 
     @GetMapping("/sum")
     public int sum(@RequestParam int a, @RequestParam int b) {
-        return a * b; // BUG: debería ser a + b
+        return a + b; // corregido
     }
 
     @GetMapping("/multiply")
